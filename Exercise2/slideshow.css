@@ -1,0 +1,29 @@
+.Slideshow_Container
+{ 
+    position: center;
+    margin: auto;
+}
+.center
+{
+    border-radius: 8px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.button1, .button2
+{
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -60px;
+    
+}
+.button1
+{
+    left: 300;
+}
+.button2
+{
+   right: 325;
+}
