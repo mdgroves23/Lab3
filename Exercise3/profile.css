@@ -1,0 +1,29 @@
+*{
+    text-align: center;
+}
+.image_format, .bordered
+{
+    border-radius: 8px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.text_format, .bordered
+{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+.bordered
+{
+    width: 750px;
+    border-style: double;
+    background-color: darkolivegreen;
+}
+body
+{
+    background-image: url("seaweed.png");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
