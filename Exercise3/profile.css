@@ -27,3 +27,11 @@ body
     background-repeat: no-repeat;
     background-size: cover;
 }
+.link_format
+{
+    color: black;
+}
+.link_format:hover
+{
+    color: white;
+}
