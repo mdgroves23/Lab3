@@ -6,7 +6,7 @@ function validateForm()
     {
         alert('Your password must be at least 8 characters long.')
     }
-    else if (password != password_confirm)
+    else if (password != password_confirm || password.length != password_confirm.length)
     {
         alert('The passwords do not match.')
             

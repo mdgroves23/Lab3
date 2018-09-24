@@ -38,26 +38,27 @@
     </div>
     <div class="inputDiv">
         Green Value:<br>
-        <input type="number" class="inputBox" id="back_G">
+        <input type="number" class="inputBox" id="back_G" style="margin-bottom: 20px">
     </div>
     <div class="inputDiv">
         Blue Value:<br>
         <input type="number" class="inputBox" id="back_B">
     </div>
+    <br>
     <button type="button" onclick="change_values()">Apply Changes</button>
     <script>
         function change_values()
         {
-            let background_red = document.getElementbyId("back_R").value;
-            let background_green = document.getElementbyId("back_G").value;
-            let background_blue = document.getElementbyId("back_B").value;
-            let border_red = document.getElementbyId("bord_R").value;
-            let border_green = document.getElementbyId("bord_G").value;
-            let border_blue = document.getElementbyId("bord_B").value;
-            let border_width = document.getElementbyId("bord_w").value;
-            document.getElementbyId("paragraph").style.backgroundColor = rgb(background_red, background_green, background_blue);
-            document.getElementbyId("paragraph").style.borderColor = rgb(border_red, border_green, border_blue);
-            document.getElementById("paragraph").style.borderWidth = get_B_Width(bord_width);
+            let background_red = document.getElementById("back_R").value;
+            let background_green = document.getElementById("back_G").value;
+            let background_blue = document.getElementById("back_B").value;
+            let border_red = document.getElementById("bord_R").value;
+            let border_green = document.getElementById("bord_G").value;
+            let border_blue = document.getElementById("bord_B").value;
+            let border_width = document.getElementById("bord_W").value;
+            document.getElementById("paragraph").style.backgroundColor = rgb(background_red, background_green, background_blue);
+            document.getElementById("paragraph").style.borderColor = rgb(border_red, border_green, border_blue);
+            document.getElementById("paragraph").style.borderWidth = get_B_Width(border_width);
         }
         function rgb(r, g, b)
         {
